@@ -7,6 +7,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="normalize" href="normalize.css" />
     <title>Admin Dashboard</title>
@@ -40,16 +54,16 @@
     <header>
       <div class="header__top">
         <div class="top__left">
-          <span class="search__img"></span>
-          <div class="search-field"></div>
+          <label for="search-field"><img src="" alt="" ></label>
+          <input type="text" id="search-field" class="search-field"></input>
           <!-- /.header__search -->
         </div>
         <!-- /.top__left -->
         <div class="top__right">
           <ul class="header__top__icons">
             <li>1item</li>
-            <li>2item</li>
-            <li>3item</li>
+            <li><img src="cat-profile.jpg" alt="striped cat" class="profile-img"></li>
+            <li>Big Chonk</li>
           </ul>
         </div>
         <!-- /.top__right -->
@@ -57,9 +71,10 @@
       <!-- /.header__top -->
       <div class="header__bottom">
         <div class="bottom__left">
-          <div class="header__bottom__profileicon"></div>
+          <img src="cat-profile.jpg" alt="striped cat" id="profile__greeting" class="profile-img profile-img--lg">
           <!-- /.header__bottom__profileicon -->
-          <p class="header__bottom__greeting">hi</p>
+          <p class="profile__greeting">Hi there,</p>
+          <p class="profile__name">Big Chonk (&#64;Chonker)</p>
           <!-- /.greeting -->
         </div>
         <!-- /.bottom__left -->
@@ -233,13 +248,15 @@
         <div class="card__container">
           <h3>Trending</h3>
           <div class="card card--long">
-            <div class="trending__items"></div>
+            <div class="trending__items">
+              <img src="leilajfif.jfif" alt="munchkin tabby" class="profile-img trending__img"> <p>@Leila</p> <p>World Peace Builder</p>
+            </div>
             <!-- /.trending__items -->
-            <div class="trending__items"></div>
+            <div class="trending__items"><img src="jagger.jfif" alt="tuxedo cat" class="profile-img trending__img"> <p>@Jagger</p> <p>Sleeping On Keyboards</p></div>
             <!-- /.trending__items -->
-            <div class="trending__items"></div>
+            <div class="trending__items"><img src="siamese-cat.jpg" alt="siamese-cat" class="profile-img trending__img"> <p>@Sully</p> <p>New Catnip Strain</p></div>
             <!-- /.trending__items -->
-            <div class="trending__items"></div>
+            <div class="trending__items"><img src="tiger.jpg" alt="tiger" class="profile-img trending__img"> <p>@Tiger</p> <p>Make Humans Servants</p></div>
             <!-- /.trending__items -->
           </div>
           <!-- /.trending -->
