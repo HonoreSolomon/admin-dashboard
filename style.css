@@ -7,7 +7,7 @@
 body {
   display: grid;
   grid-template-columns: auto 4fr;
-  min-height: 97vh;
+  min-height: 100vh;
   grid-template-rows: auto 4fr;
 }
 
@@ -37,6 +37,14 @@ li {
 
 .sidebar li {
   display: flex;
+  justify-content: flex-start;
+  gap: 2.2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  transform: translateX(-16px);
 }
 
 h1 {
@@ -47,7 +55,7 @@ header {
   background-color: #faf5ff;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 1.5em 2em;
   gap: 1.5rem;
 }
 
@@ -76,6 +84,8 @@ header {
 
 .top__left {
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .top__right > .header__top__icons {
@@ -91,11 +101,12 @@ header {
 }
 
 .search-field {
-  height: 2rem;
+  font-size: 1.2rem;
   border-radius: 32px;
   border: none;
   background-color: #e9d5ff;
   flex: 1;
+  padding: 0.8rem;
 }
 .header__bottom {
   display: grid;
@@ -105,7 +116,7 @@ header {
 
 .bottom__left {
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 1fr 13fr;
   align-items: center;
   font-weight: 700;
 }
@@ -135,7 +146,7 @@ header {
   border: none;
   color: #faf5ff;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 .content {
@@ -176,7 +187,7 @@ header {
   padding: 2rem 0;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 55ch;
+  grid-template-columns: minmax(auto, 55ch);
 }
 
 .card__container {
@@ -186,10 +197,14 @@ header {
 
 .card__container h3 {
   font-size: 2rem;
+  transform: translateY(-8px);
 }
 
 .card ul {
   display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
 .card--long {
@@ -219,4 +234,8 @@ header {
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   gap: 1rem;
+}
+
+h4 {
+  font-size: 1.3rem;
 }
