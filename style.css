@@ -159,7 +159,7 @@ header {
 
 .projects {
   display: grid;
-  grid-template-rows: auto 3fr 3fr 3fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
   grid-template-columns: repeat(auto-fit, 45ch);
   padding: 2rem 0;
   gap: 2rem 2rem;
